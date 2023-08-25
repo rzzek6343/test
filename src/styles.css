@@ -1,0 +1,108 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.tenders {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #73898e;
+}
+
+.tenders_wrapper {
+  margin: 15px;
+  height: 95vh;
+  overflow-y: auto;
+}
+
+.tender__row,
+.fav_row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@media (min-width: 1300px) {
+  .tender__row {
+    justify-content: normal;
+  }
+}
+
+.tender__card {
+  border: 1px solid #bbb;
+  margin: 5px 5px 30px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 30px #bbb;
+  width: 310px;
+}
+
+.tender__card .card__wrapper {
+  margin: 5px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .tender__card {
+    width: 410px;
+    margin: 0 30px 30px 0;
+  }
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.card__header .card__logo_like {
+  width: 30px;
+  cursor: pointer;
+}
+
+.card__header .card__logo_liked {
+  width: 30px;
+  cursor: pointer;
+}
+
+.card__logo_like {
+  fill: #fff;
+}
+
+.card__logo_liked {
+  fill: red;
+}
+
+.card__info .card__area {
+  display: flex;
+}
+
+.card__info .card__area .card__area__param {
+  border-right: 1px solid #ccc;
+  padding: 0 5px 5px 0;
+  margin-right: 5px;
+}
+
+.card__info .card__area .card__area__param:last-child {
+  border-right: none;
+  margin-right: 0;
+}
+
+.card__address {
+  font-size: 14px;
+}
+
+.card__relationships {
+  min-height: 50px;
+  margin-bottom: 15px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #47e847;
+}
